@@ -13,12 +13,15 @@ $(document).ready(function() {
         $(`<p>${tarefa}</p>`).appendTo(novaTarefa);
         $(novaTarefa).appendTo('ul');
         
-        $('p').click(function(){
-            $(`<p class="aprovado"></p>`);
-        })
+        
         
     })
     
+        $("ul").on("click", "li", function() {
+
+            $(this).toggleClass("aprovado");
+            
+        })
 
 
 })
